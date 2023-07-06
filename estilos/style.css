@@ -1,5 +1,29 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'baixado01';
+    src: url('../fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'baixado020';
+   
+    src: url('../fonts/static/HankenGrotesk-Medium.ttf') format('truetype');
+
+}
+@font-face {
+    font-family: 'baixado021';
+   
+    src: url('../fonts/static/HankenGrotesk-Bold.ttf') format('truetype');
+
+}
+@font-face {
+    font-family: 'baixado022';
+   
+    src: url('../fonts/static/HankenGrotesk-ExtraBold.ttf') format('truetype');
+}
+
+
 :root{
     /*cores do quadro roxo*/
     --cima:#5941F2;
@@ -15,6 +39,11 @@
     --cor02:#DECC9C;
     --cor03:#AFE8E1;
     --cor04:#2E3784;
+
+    --txt01:'baixado01';
+    --txt020:'baixado020';
+    --txt021:'baixado021';
+    --txt022:'baixado022';
 }
 
 *{
@@ -41,21 +70,55 @@ section{
     border: 1px solid yellow;
     height: 280px;
     border-radius: 0px 0px 40px 40px;
-    background-image: linear-gradient(to bottom,blue,rgb(101, 70, 255));
+    background-image: linear-gradient(to top,blue,#401dee,#4f2ef3,#6546ff);
 }
 #div1>h2{
     text-align: center;
-    color: var(--branco);
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.232);
-    padding: 15px;
+    color: rgba(255, 255, 255, 0.778);
+    font-family: var(--txt020);
+    font-weight: lighter;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.114);
+    font-size: medium;
+    padding: 10px;
 }
 #div1>#circulo{
    text-align: center;
+   background-image: linear-gradient(to top,#5131ef,#4d33d1,#4224da);
+   width: 70px;
+   height: 70px;
+   padding: 20px;
+   display: block;
+   margin: auto;
+   border-radius: 50%;
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.114);
+   color: var(--branco);
+}
+#circulo>p.tet{
+    color: rgba(255, 255, 255, 0.778);
+    font-family: var(--txt01);
+    font-size: small;
+}
+#circulo>.num{
+    font-size: 3em;
+    font-weight: bold;
+    font-family: var(--txt01);
+    color: var(--branco);
 }
 #div1>h1{
     text-align: center;
+    color: white;
+    font-family: var(--txt021);
+    text-transform: capitalize;
+    margin-top: 10px;
+    padding: 6px;
 }
 #div1>p{
-    text-align: justify;
-    padding: 40px;
+    width: 240px;
+    display: block;
+    margin: auto;
+    color: rgba(255, 255, 255, 0.778);
+    font-family: var(--txt020);
+    font-size: 14px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.084);
 }
