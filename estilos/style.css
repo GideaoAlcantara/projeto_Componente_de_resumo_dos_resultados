@@ -24,4 +24,38 @@
 html,body{
     height: 100vh;
     width: 100vw;
+    position: relative;
+}
+
+section{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid red;
+    height: 700px;
+    width: 350px;
+}
+
+#div1{
+    border: 1px solid yellow;
+    height: 280px;
+    border-radius: 0px 0px 40px 40px;
+    background-image: linear-gradient(to bottom,blue,rgb(101, 70, 255));
+}
+#div1>h2{
+    text-align: center;
+    color: var(--branco);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.232);
+    padding: 15px;
+}
+#div1>#circulo{
+   text-align: center;
+}
+#div1>h1{
+    text-align: center;
+}
+#div1>p{
+    text-align: justify;
+    padding: 40px;
 }
