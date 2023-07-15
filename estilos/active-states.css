@@ -1,1 +1,136 @@
 @charset "UTF-8";
+
+@media screen and (min-width:760px) {
+    
+    section{
+        display: inline;
+        height: 600px;
+        width: 800px;
+    }
+
+    #div1{
+        width: 400px;
+        height: 600px;
+
+    }
+
+    #div1>h2{
+        font-size: 1.5em;
+        padding-top: 40px;
+    }
+
+    #div1>h1{
+        margin: 0px 0px 0px 0px;
+        font-size: 2em;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    #div1>p{
+        margin-left: 23%;
+        font-size: 1.1em;
+        text-align: center;
+        margin: 0px auto 0px auto;
+    }
+    
+    #div1>#circulo{
+        width: 190px;
+        height: 190px;
+        margin: 25px auto 0px auto;
+     }
+
+     #circulo>p.tet{
+        font-size: large;
+    }
+    #circulo>.num{
+        font-size: 5em;
+        margin-top: 30px;
+    }
+
+
+    #div2>{
+        width: 400px;
+    }
+
+    #div2>h1{
+        font-size: medium;
+        text-align: center;
+        margin: 0px auto 100px auto;
+        color: var(--preto);
+        margin-bottom: 20px;
+    }
+
+    #div2>span{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #DECC9C;
+        padding: 12px;
+        margin:0px auto 23px 400px;
+        width: 300px;
+        border-radius: 10px;
+    }
+    
+    #div2>span.verm{
+         background-color: #eda7af3f;
+    }
+    #div2>span.verm>span{
+        display: flex;
+        align-items: center;
+    }
+    #div2>span.verm>span>p{
+        color: #f35063;
+     }
+    #div2>span.amal{
+        background-color: #dece9c2f;
+     }
+     #div2>span.amal>span{
+        display: flex;
+        align-items: center;
+    }
+    #div2>span.amal>span>p{
+        color: #e3b840;
+     }
+     #div2>span.verd{
+        background-color: #afe8e12e; 
+     }
+     #div2>span.verd>span{
+        display: flex;
+        align-items: center;
+    }
+    #div2>span.verd>span>p{
+        color: #1fbba9;
+     }
+     #div2>span.azul{
+        background-color: #2e37842f;
+     }
+     #div2>span.azul>span{
+        display: flex;
+        align-items: center;
+    }
+    
+    #div2>span.azul>span>p{
+       color: #071ac6;
+    }
+    
+    
+    #div2>span>p>strong{
+      color: var(--preto);
+    }
+    #div2>span>p>em{
+       font-style: normal;
+       color: #313e59c6;
+    }
+}
+
+section>input{
+    width: 300px;
+    padding: 12px;
+    display: block;
+    margin: auto;
+    border-radius: 30px;
+    text-transform: capitalize;
+    font-family: var(--txt021);
+    background-color: #313E59;
+    color: white;
+    font-size: medium;
+}
