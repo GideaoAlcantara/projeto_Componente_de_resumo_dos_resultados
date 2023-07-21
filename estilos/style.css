@@ -61,6 +61,8 @@ section{
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
+    transition: width .2s , height .2s;
+    transition-timing-function: ease;
    /* border: 1px solid red;*/
     height: 700px;
     width: 350px;
@@ -69,8 +71,8 @@ section{
     border-radius: 40px 40px 40px 40px;
 }
 
-section>input{
-    width: 82%;
+section>div#div2>input{
+    width: 100%;
     padding: 12px;
     display: block;
     margin: auto;
@@ -82,7 +84,7 @@ section>input{
     font-size: medium;
 }
 
-section>input:hover{
+section>div#div2>input:hover{
     background-image: linear-gradient(to top,blue,#401dee,#4f2ef3,#6546ff);
     cursor: pointer; 
     border-color: #6546ff;
